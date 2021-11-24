@@ -20,7 +20,7 @@ session_start();
     <nav>
         <img src="styles/logo.png" class="logo">
         <ul class=nav-links>
-            <li><a href="home.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="packages.php">Packages</a></li>
             <li><a href="shop.php">Shop</a></li>
@@ -82,7 +82,7 @@ session_start();
                 <div class="footer-col" style="margin-left: 9em;">
                     <h4 style="margin-left: 29px;">Quick Links</h4>
                     <ul>
-                        <li><a href="home.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="packages.php">Packages</a></li>
                         <li><a href="shop.php">Shop</a></li>

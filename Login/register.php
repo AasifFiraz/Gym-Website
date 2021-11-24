@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
 
 <body>
 	<div class="container">
-		<a href="../home.php">
+		<a href="../index.php">
 			<button type="button" class="btn-close btn-close-white" aria-label="Close" style="position: relative; margin-left: 20rem; bottom: 15px;"></button>
 		</a>
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="login-email">

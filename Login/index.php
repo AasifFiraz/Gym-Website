@@ -7,7 +7,7 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-	header("Location: ../home.php");
+	header("Location: ../index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: ../home.php");
+		header("Location: ../index.php");
 	} else {
 		echo "<script>alert('Email or Password is Wrong.')</script>";
 	}
@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
 <body>
 
 	<div class="container">
-		<a href="../home.php">
+		<a href="../index.php">
 			<button type="button" class="btn-close btn-close-white" aria-label="Close" style="position: relative; margin-left: 20rem; bottom: 15px;"></button>
 		</a>
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="login-email">
